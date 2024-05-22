@@ -111,7 +111,7 @@ def get_diffusion_from_args(args):
         )
 
     diffusion = GaussianDiffusion(
-        model, (128, 128), 3, 10,
+        model, (64, 64), 3, 10,
         betas,
         ema_decay=args.ema_decay,
         ema_update_rate=args.ema_update_rate,
